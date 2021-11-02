@@ -27,6 +27,9 @@ class TV:
         if 1 <= volumen <= 7:
             self._volumen = volumen
 
+    def setNumTV(self, n):
+        self.numTV= n
+
     def getMarca(self) :
         return self._marca
 
@@ -60,7 +63,7 @@ class TV:
         if 1 < self._canal <= 120 :
             self._canal -= 1
 
-    def volumeUp(self):
+    def volumenUp(self):
         if 1<= self._volumen < 7:
             self._volumen +=1
 
