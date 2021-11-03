@@ -28,6 +28,8 @@ class TV :
     @classmethod
     def setNumTV (cls, numTV) :
         cls.numTV = numTV
+    def getControl(self):
+        return self._control
 
     def getMarca (self) :
         return self._marca
